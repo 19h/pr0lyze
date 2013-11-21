@@ -2,7 +2,7 @@ var http = require("http"), fs = require("fs");
 var lvl = require("hyperlevel")("./db"),
 vrs = require("level-version");
 
-var r = 10;
+var r = 17;
 
 var ProgressBar = require('progress');
 
@@ -29,7 +29,7 @@ var get = function (opt, cb) {
 	}).end()
 }
 
-console.log("== pr0lyzer r%s ==", r, "\n")
+console.log("== pr0lyze r%s ==", r, "\n")
 
 dt.createVersionStream("", {
 	limit: 1
